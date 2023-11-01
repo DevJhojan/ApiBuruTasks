@@ -13,10 +13,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Collections\CollectionTaskConstants\" />
-    <Folder Include="Collections\CollectionShared\" />
     <Folder Include="Controllers\ControllersTaskConstants\" />
     <Folder Include="Controllers\ControllersShareds\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TaskBuru.Domain\TaskBuru.Domain.csproj" />
+    <ProjectReference Include="..\TasksBuru.Application\TasksBuru.Application.csproj" />
   </ItemGroup>
 
 </Project>
