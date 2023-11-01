@@ -3,13 +3,13 @@ import { RouterModule, Routes } from "@angular/router";
 import { Error404Component } from "./shared/components/error-404/error-404.component";
 
 const routes: Routes = [
-  {path: '', redirectTo: 'auth', pathMatch:'full'},
+  {path: '', redirectTo: 'Todo', pathMatch:'full'},
   {
     path: 'auth', title: 'Bienvenido TodoBuru',
     loadChildren:() => import('./auth/auth.module').then(m=> m.AuthModule)
   },
   {
-    path: 'buru',
+    path: 'Todo',
     title: 'Buru',
     loadChildren:()=> import('./home/home.module').then(m=>m.HomeModule)
   },
